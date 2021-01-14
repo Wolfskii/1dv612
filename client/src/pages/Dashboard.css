@@ -1,0 +1,35 @@
+thead tr th {
+  font-weight: bold !important;
+}
+
+tbody tr:nth-child(odd) a, tbody tr:nth-child(odd) p, tbody tr:nth-child(odd) td {
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #ececec;
+}
+  
+tbody tr:nth-child(odd) {
+  background: #3F51B5;
+}
+
+.visibility-icon:hover {
+  fill: #F51D57;
+  cursor: pointer;
+}
+
+td a {
+  text-decoration: none; /* no underline */
+  color: inherit;
+}
+
+td a:hover {
+  color: blue;
+}
+
+.is-read a, .is-read p, .is-read td {
+  background: grey;
+  color: black !important;
+  text-decoration: line-through;
+}

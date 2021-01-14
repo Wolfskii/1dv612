@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Kameleo";
+  src: url("./fonts/kameleo.eot");
+  src: url("./fonts/kameleo.woff") format("woff"),
+  url("./fonts/kameleo.ttf") format("ttf");
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+  font-family:'Kameleo', sans-serif;
+}
+
+#app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#body {
+  max-height: 100%;
+}
+
+#logo {
+  text-align: center;
+}
+
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./img/hero-bg.jpg");
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  flex: 0 0 50%;
+  text-align: justify;
+  line-height: 1.8em;
+  margin: 3em;
+}
+
+@media only screen and (max-width: 1000px) , (orientation : portrait) {
+  #app {
+    height: 100%;
+  }
+
+  #hero-content {
+    flex: 0 0 80%;
+    text-align: left;
+    line-height: 2em;
+  }
+
+  #hero-content h1 {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  #hero-content p {
+    margin: 0 1.3em 0 1.3em;
+  }
+
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true a:link {
+    color: #fff;
+  }
+
+  .MuiTypography-root.MuiTypography-h6 {
+    font-size: 1.4;
+    margin-bottom: 0.8em;
+  }
+}
